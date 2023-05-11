@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="EN">
+
+  <head>
+      <meta charset="utf-8">
+      <title>Game Title</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="favicon.png">
+
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/ui.css">
+      <link rel="stylesheet" href="css/environment.css">
+      <link rel="stylesheet" href="css/elevator.css">
+      <link rel="stylesheet" href="css/pump.css">
+      <link rel="stylesheet" href="css/equipment.css">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+  </head>
+
+  <!-- 
+    CREDITS:
+  -->
+
+  <body>
+
+    <div id="viewport">
+      <div id="controls">
+        <a id="floor-0" data-floor="-1" href="#"><span>-1</span></a>
+        <a id="floor-E" data-floor="0" href="#"><span>E</span></a>
+        <a id="floor-1" data-floor="1" href="#"><span>1</span></a>
+        <a id="floor-2" data-floor="2" href="#"><span>2</span></a>
+      </div>
+      <div class="bg-sky environment"></div>
+      <div class="bg-1 environment"></div>
+      <div class="bg-1a-coal environment"></div>
+      <main id="diorama">
+        <div id="elevator">
+          <img class="counterweight-chain" src="./img/elevator/long-chain.png">
+          <img class="counterweight" src="./img/elevator/counter-weight.png">          
+          <img class="coach-chain" src="./img/elevator/long-chain.png">
+          <img class="coach" src="./img/elevator/elevator-coach.png">          
+          <div class="flames-bg"></div>
+          <div class="flames"></div>          
+          <div class="smoke-1"></div>
+          <div class="static"></div>
+          <img class="coach-small-wheel-holder" src="./img/elevator/elevator-small-wheel-holder.png">
+          <img class="coach-small-wheel" src="./img/elevator/elevator-small-wheel.png">
+          <img class="chain-1" src="./img/pump/chain-2.png">
+          <img class="chain-2" src="./img/pump/chain-2.png">
+          <div class="steam"></div>
+          <img class="heater-wheel-holder" src="./img/elevator/heater-wheel-holder.png">
+          <img class="heater-wheel" src="./img/elevator/heater-wheel.png">
+          <img class="heater-steam-rod" src="./img/elevator/heater-steam-rod.png">
+          <img class="heater-steamer" src="./img/elevator/heater-steamer.png">
+          <div class="smoke-2"></div>
+        </div>
+        <div id="pump">
+          <img class="chain-1" src="./img/pump/chain-2.png">
+          <img class="chain-2" src="./img/pump/chain-2.png">
+          <img class="cover" src="./img/environment/cover.png">
+          <div class="arms"></div>
+          <div class="flames-bg"></div>
+          <div class="flames"></div>          
+          <div class="smoke-2"></div>
+          <div class="static"></div>
+          <div class="steam"></div>
+          <div class="smoke-1"></div>
+        </div>
+        <img class="ladder equipment" src="./img/equipment/ladder.png">
+        <img class="cart-1 equipment" src="./img/equipment/cart.png">
+        <img class="cart-2 equipment" src="./img/equipment/cart.png">
+        <img class="box-1 equipment" src="./img/equipment/box.png">
+        <img class="box-2 equipment" src="./img/equipment/box.png">
+        <img class="bucket equipment" src="./img/equipment/bucket.png">
+        <div class="man"><div class="body"></div></div>
+        <div class="muddy-waters-top"></div>
+        <div class="muddy-waters-body"></div>
+      </main>
+      <div class="bg-2-dimmer environment"></div>
+      <div class="bg-3-support-beam environment"></div>
+      <div class="bg-top-soil environment"></div>
+      <div id="elevator-extension" class="environment">
+        <img class="coach-wheel" src="./img/elevator/elevator-big-wheel.png">
+      </div>
+    </div>
+    <!--
+    <div id="all-audio">
+      <audio class="music-day-isabel_woodings" src="sound/music/day-isabel_woodings.mp3" preload loop></audio>
+      <audio class="music-night-1" src="sound/music/night-1.mp3" preload loop></audio>
+      <audio class="music-night-2" src="sound/music/night-2.mp3" preload loop></audio>
+      <audio class="sfx-nope" src="sound/fx/nope.mp3" preload></audio>
+      <audio class="sfx-click" src="sound/fx/click.mp3" preload></audio>
+      <audio class="sfx-pick" src="sound/fx/pick-up.mp3" preload></audio>
+      <audio class="sfx-break-twig" src="sound/fx/break-twig.mp3" preload></audio>
+      <audio class="sfx-chop-rock" src="sound/fx/chop-rock.mp3" preload></audio>
+      <audio class="sfx-chop-wood" src="sound/fx/chop-wood.mp3" preload></audio>
+      <audio class="sfx-collect-stones" src="sound/fx/collect-stones.mp3" preload></audio>
+      <audio class="sfx-craft" src="sound/fx/craft.mp3" preload></audio>
+      <audio class="sfx-open-book" src="sound/fx/open-book.mp3" preload></audio>
+      <audio class="sfx-catch-fish" src="sound/fx/catch-fish.mp3" preload></audio>
+      <audio class="sfx-build-something" src="sound/fx/build-something.mp3" preload></audio>
+      <audio class="sfx-wooden-box" src="sound/fx/wooden-box.mp3" preload></audio>
+    </div>
+    -->
+  
+    <script src="js/init.js" type="module"></script>
+    
+  </body>
+
+</html>

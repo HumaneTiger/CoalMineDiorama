@@ -1,0 +1,227 @@
+.display {
+    position: fixed;
+    background: linear-gradient(rgba(76, 76, 97, 0.7), rgba(76, 76, 97, 0.9));
+    box-shadow: 0 2px 8px rgba(214, 214, 255, 0.1), 0 4px 16px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    width: auto;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.is--hidden {
+    display: none !important;
+}
+
+.spacing--top {
+    margin-top: 8px;
+}
+
+.align--center {
+    text-align: center;
+}
+
+.align--right {
+    text-align: right;
+}
+
+.text--tiny {
+    font-size: 12px;
+    filter: brightness(85%);
+}
+
+.text--small {
+    font-size: 0.9em;
+}
+
+.text--ssmedium {
+    font-size: 1.2em;
+}
+
+.text--smedium {
+    font-size: 1.5em;
+}
+
+.text--medium {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.text--large {
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+hr.spacing {
+    border: 0 none;
+    padding: 4px 0;
+}
+
+hr.spacing--small {
+    border: 0 none;
+    padding: 5px 0;
+    margin: 0;
+}
+
+small {
+    text-transform: uppercase;
+    font-size: 10px;
+    filter: brightness(85%);
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(5px); }
+    66% { transform: translateX(-8px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake linear 0.2s 3 forwards;
+}
+
+/* ============================================== */
+.man {
+    position: absolute;
+    bottom: 496px;
+    right: -100px;
+    animation-name: move;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+  0% {opacity: 0; right: -50px;}
+  25% {opacity: 0.75; right: 175px;}
+  40% {opacity: 1; right: 300px;}
+  75% {opacity: 1; right: 625px;}
+  100% {opacity: 0; right: 800px;}
+}
+
+.man .body {
+    width: 36px;
+    height: 90px;
+    transform: scaleX(-1);
+    transform-origin: center bottom;
+    background-image: url(../img/man/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    animation-name: walk;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.steam {
+    animation-name: steam;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.smoke-1 {
+    animation-name: smoke-1;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
+    background-position: center bottom;
+    background-size: contain;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+
+.smoke-2 {
+    animation-name: smoke-2;
+    animation-duration: 900ms;
+    animation-timing-function: linear;
+    background-position: center bottom;
+    background-size: contain;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+
+@keyframes walk {
+    0% { background-image: url(../img/man/1.png); }
+    10% { background-image: url(../img/man/2.png); }
+    20% { background-image: url(../img/man/3.png); }
+    30% { background-image: url(../img/man/4.png); }
+    40% { background-image: url(../img/man/5.png); }
+    50% { background-image: url(../img/man/6.png); }
+    60% { background-image: url(../img/man/7.png); }
+    70% { background-image: url(../img/man/8.png); }
+    80% { background-image: url(../img/man/9.png); }
+    90% { background-image: url(../img/man/10.png); }
+}
+
+@keyframes steam {
+    0% { background-image: url(../img/steam/1.png); }
+    10% { background-image: url(../img/steam/2.png); }
+    20% { background-image: url(../img/steam/3.png); }
+    30% { background-image: url(../img/steam/4.png); }
+    40% { background-image: url(../img/steam/5.png); }
+    50% { background-image: url(../img/steam/6.png); }
+    60% { background-image: url(../img/steam/7.png); }
+    70% { background-image: url(../img/steam/8.png); }
+    80% { background-image: url(../img/steam/9.png); }
+    90% { background-image: url(../img/steam/10.png); }
+}
+
+@keyframes smoke-1 {
+    0% { background-image: url(../img/smoke/1.png); }
+    50% { background-image: url(../img/smoke/2.png); }
+    100% { background-image: url(../img/smoke/3.png); }
+}
+
+@keyframes smoke-2 {
+    0% { background-image: url(../img/smoke/2.png); }
+    50% { background-image: url(../img/smoke/1.png); }
+    100% { background-image: url(../img/smoke/3.png); }
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#controls {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 100;
+    width: 300px;
+}
+
+#controls a{
+    box-sizing: border-box;
+    display: block;
+    border: 0 none;
+    font-family: 'Newsreader', serif;
+    box-shadow: 0 0 4px rgba(0,0,0,1);
+    font-weight: 300;
+    cursor: pointer;
+    padding: 1px;
+    margin: 0 3%;
+    display: inline-block;
+    background: radial-gradient(closest-side, #fff 0%, #fff 85%, #eec965 95%, rgba(145,112,59,1) 110%, rgba(163,126,67,1) 130%);
+    transition: transform 0.05s ease-out;
+    vertical-align: top;
+}
+
+#controls a span {
+    display: inline-block;
+    padding: 6px 6px 2px;
+    margin: 0;
+    background-image: url(../img/button.png);
+    background-size: cover;
+    color: #eec965;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 24px;
+}

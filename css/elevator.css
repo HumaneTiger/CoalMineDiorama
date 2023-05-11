@@ -1,0 +1,215 @@
+#elevator .static {
+  position: absolute;
+  left: 580px;
+  top: 133px;
+  width: 212px;
+  height: 200px;
+  background-image: url(../img/elevator/static.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#elevator .flames-bg {
+  position: absolute;
+  left: 653px;
+  top: 238px;
+  width: 109px;
+  height: 72px;
+  background-image: url(../img/pump/flames-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+#elevator .flames {
+  position: absolute;
+  left: 680px;
+  top: 280px;
+  width: 55px;
+  height: 32px;
+  transform: translateX(-1);
+  background-image: url(../img/flame/flame-anim.gif);
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+#elevator .coach {
+  position: absolute;
+  left: 976px;
+  top: 220px;
+  width: 114px;
+  transition: top linear 2000ms;
+}
+
+#elevator-extension .coach-wheel {
+  position: absolute;
+  left: 963px;
+  top: 86px;
+  width: 130px;
+}
+
+#elevator .coach-small-wheel {
+  position: absolute;
+  left: 1028px;
+  top: 90px;
+  width: 46px;
+}
+
+#elevator .coach-small-wheel-holder {
+  position: absolute;
+  left: 1038px;
+  top: 84px;
+  width: 25px;
+}
+
+#elevator .coach-chain {
+  position: absolute;
+  left: 1028px;
+  top: -777px;
+  width: 10px;
+  transition: top linear 2000ms;
+}
+
+#elevator .counterweight {
+  position: absolute;
+  left: 964px;
+  top: 926px;
+  width: 15px;
+  transition: top linear 2000ms;
+}
+
+#elevator .counterweight-chain {
+  position: absolute;
+  left: 966px;
+  top: 160px;
+  width: 10px;
+  height: 770px;
+  transition: top linear 2000ms;
+}
+
+#elevator .heater-steamer {
+  position: absolute;
+  left: 766px;
+  top: 240px;
+  width: 44px;
+}
+
+#elevator .heater-wheel {
+  position: absolute;
+  left: 800px;
+  top: 240px;
+  width: 80px;
+}
+
+#elevator .heater-wheel-holder {
+  position: absolute;
+  left: 816px;
+  top: 283px;
+  width: 50px;
+  height: 35px;
+}
+
+#elevator .chain-1 {
+  position: absolute;
+  width: 11px;
+  left: 907px;
+  top: 66px;
+  transform: rotate(50deg);
+  height: 221px;
+}
+
+#elevator .chain-2 {
+  position: absolute;
+  width: 11px;
+  left: 946px;
+  top: 150px;
+  transform: rotate(61deg);
+  height: 214px;
+}
+
+#elevator .heater-wheel {
+  animation-play-state: paused;
+  animation-name: turn-1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#elevator-extension .coach-wheel {
+  animation-play-state: paused;
+  animation-name: turn-1;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes turn-1 {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+#elevator .coach-small-wheel {
+  animation-play-state: paused;
+  animation-name: turn-reverse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes turn-reverse {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(-360deg); }
+}
+
+#elevator .chain-1,
+#elevator .chain-2 {
+  animation-play-state: paused;
+  animation-name: rattle;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rattle {
+  0% { margin: 0 0 0 1px; }
+  33% { margin: 1px 0 0 0; }
+  66% { margin: 1px 0 0 -1px; }
+}
+
+#elevator .heater-steam-rod {
+  position: absolute;
+  left: 834px;
+  top: 272px;
+  width: 15px;
+}
+
+#elevator .heater-steam-rod {
+  animation-play-state: paused;
+  animation-name: crazy;
+  transform-origin: 50% 100%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes crazy {
+  from { transform: rotate(0deg) translateX(33px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(33px) rotate(-360deg); }
+}
+
+#elevator .steam {
+  position: absolute;
+  left: 740px;
+  top: 190px;
+  width: 100px;
+  height: 40px;
+  transform: rotate(-90deg);
+}
+
+#elevator .smoke-1,
+#elevator .smoke-2 {
+  position: absolute;
+  left: 480px;
+  top: -170px;
+  width: 250px;
+  height: 390px;
+}

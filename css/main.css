@@ -1,0 +1,40 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Times New Roman, Georgia, Garamond, serif;
+    font-size: 14px;
+    background-color: black;
+}
+
+body * {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#viewport {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: top left;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+main {
+    height: 1080px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}

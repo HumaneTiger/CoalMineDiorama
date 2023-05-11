@@ -1,0 +1,72 @@
+.environment {
+  height: 1080px;
+  width: 100%;
+  position: absolute;
+}
+
+.bg-sky {
+  background-image: url(../img/environment/sky.jpg);
+  z-index: 0;
+}
+
+.bg-1 {
+  background-image: url(../img/environment/bg-1.png);
+  z-index: 2;
+}
+
+.bg-1a-coal {
+  background-image: url(../img/environment/bg-1a-coal.png);
+  z-index: 4;
+}
+
+.bg-2-dimmer {
+  background-image: url(../img/environment/bg-2-dimmer.png);
+  z-index: 6;
+}
+
+.bg-3-support-beam {
+  background-image: url(../img/environment/bg-3-support-beam.png);
+  z-index: 8;
+}
+
+.bg-top-soil {
+  background-image: url(../img/environment/bg-top-soil.png);
+  z-index: 10;
+}
+
+#elevator-extension {
+  z-index: 12;
+}
+
+.muddy-waters-body {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/muddy-waters-body.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.muddy-waters-top {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  height: 50px;
+  background-image: url(../img/muddy-waters-top.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation-name: waves;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waves {
+  0% { height: 50px; left: 0; }
+  25% { height: 60px; left: -200px; }
+  50% { height: 44px; left: -150px; right: -100px; }
+  75% { height: 55px; left: -180px; right: -130px; }
+}

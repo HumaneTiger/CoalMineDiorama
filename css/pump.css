@@ -1,0 +1,116 @@
+#pump .static {
+  position: absolute;
+  left: 1451px;
+  top: 245px;
+  width: 457px;
+  height: 395px;
+  background-image: url(../img/pump/static.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pump .arms {
+  position: absolute;
+  left: 1325px;
+  top: 330px;
+  width: 390px;
+  height: 130px;
+  transform-origin: 170px 60px;
+  background-image: url(../img/pump/pump-arms.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pump .arms {
+  animation-name: pump;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pump {
+  0% { transform: rotate(-10deg); }
+  50% { transform: rotate(-40deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+#pump .steam {
+  position: absolute;
+  left: 1685px;
+  top: 492px;
+  width: 100px;
+  height: 40px;
+}
+
+#pump .smoke-1,
+#pump .smoke-2 {
+    position: absolute;
+  right: -110px;
+  top: -50px;
+  width: 310px;
+  height: 390px;
+}
+
+#pump .chain-1 {
+  position: absolute;
+  left: 1340px;
+  top: 382px;
+  width: 10px;
+  transform-origin: 50% 40%;
+}
+
+#pump .chain-1 {
+  animation-name: updown-1;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updown-1 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(75px) rotate(4deg) ; }
+  100% { transform: translateY(0px); }
+}
+
+#pump .chain-2 {
+  position: absolute;
+  left: 1685px;
+  top: 392px;
+  width: 10px;
+  transform-origin: 50% 50%;
+}
+
+#pump .chain-2 {
+  animation-name: updown-2;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updown-2 {
+  0% { transform: translateY(0px) rotate(0); }
+  50% { transform: translateY(-95px) rotate(-6deg) ; }
+  100% { transform: translateY(0px) rotate(0); }
+}
+
+#pump .flames-bg {
+  position: absolute;
+  left: 1648px;
+  top: 530px;
+  width: 78px;
+  height: 56px;
+  background-image: url(../img/pump/flames-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+#pump .flames {
+  position: absolute;
+  left: 1668px;
+  top: 560px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/flame/flame-anim.gif);
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
